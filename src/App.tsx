@@ -1,6 +1,7 @@
 import {PathFindingProvider} from "./context/PathFindingContext.tsx";
 import {TileProvider} from "./context/TileContext.tsx";
 import {SpeedProvider} from "./context/SpeedContext.tsx";
+import {Grid} from "./components/Grid.tsx";
 
 function App() {
 
@@ -8,9 +9,9 @@ function App() {
       <PathFindingProvider>
           <TileProvider>
               <SpeedProvider>
-          <h1 className="flex flex-col text-7xl text-center justify-center font-bold underline h-screen w-screen bg-blue-600">
-              Hello world!
-          </h1>
+          <div className="flex flex-col h-screen w-screen">
+              <Grid/>
+          </div>
               </SpeedProvider>
           </TileProvider>
       </PathFindingProvider>
